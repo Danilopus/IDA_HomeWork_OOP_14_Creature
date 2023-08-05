@@ -14,6 +14,7 @@ protected:
 	HairDensity _hair;
 
 public:
+	BodyPart() = delete; // чтобы не было возможности создавать пустые экземпляры
 	BodyPart(float weight,
 	BodyPartSize size,
 	BodyColor color,

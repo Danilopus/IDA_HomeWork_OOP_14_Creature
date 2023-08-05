@@ -140,9 +140,7 @@
     <ClInclude Include="Arms.h" />
     <ClInclude Include="Legs.h" />
     <ClInclude Include="MainMenu.h" />
-    <ClInclude Include="OverCoat.h" />
     <ClInclude Include="Service functions.h" />
-    <ClInclude Include="UnitTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

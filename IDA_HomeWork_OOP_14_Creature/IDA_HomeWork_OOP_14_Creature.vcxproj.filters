@@ -35,13 +35,7 @@
     <ClInclude Include="Service functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="OverCoat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Creature.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UnitTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Head.h">
