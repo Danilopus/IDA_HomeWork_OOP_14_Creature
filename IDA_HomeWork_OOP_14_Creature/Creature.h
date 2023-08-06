@@ -4,10 +4,10 @@
 #include "Arms.h"
 #include "Legs.h"
 
-enum class Character_type {warrior, magican, trader, sailor, terminator};
-enum class Character_race { human, elf, orc, dwarf, terminator};
+enum class Character_type {warrior, magican, trader, sailor, _end_of_list_};
+enum class Character_race { human, elf, orc, dwarf, _end_of_list_};
 
-class Creature : public Head, public Body, public Arms, public Legs
+class Creature: public Head, public Body, public Arms, public Legs
 {
 protected:
 	std::string _name; 
@@ -40,5 +40,7 @@ public:
 		_race(race)
 		{	}
 	// Shows ---------------------------------------------------------------
+	//float size() override { return Head::size()+Body::size()+Arms::size()+Legs::size()+BodyPart::size(); }
+	float size() { return Head::size()+Body::size()+Arms::size()+Legs::size()+BodyPart::size(); }
 
 };

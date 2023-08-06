@@ -18,5 +18,7 @@ public:
 		_bodysize(bodysize)	
 	{	}		
 	// Shows ---------------------------------------------------------------
+	 //float size() override	{return _bodysize;}
+	float size() { return _bodysize; }
 
 };

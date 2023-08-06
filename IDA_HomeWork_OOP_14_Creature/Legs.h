@@ -18,5 +18,7 @@ public:
 		_length(length)
 	{	}
 	// Shows ---------------------------------------------------------------
+	//float size() override { return _length; }
+	float size() { return _length; }
 
 };

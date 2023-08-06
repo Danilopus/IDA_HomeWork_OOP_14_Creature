@@ -28,5 +28,7 @@ public:
 	{	}
 
 	// Shows ---------------------------------------------------------------
-	
+	//float size() override { return _headsize; }
+	float size() { return _headsize; }
+
 };

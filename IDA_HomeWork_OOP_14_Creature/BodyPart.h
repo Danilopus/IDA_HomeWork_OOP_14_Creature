@@ -1,9 +1,9 @@
 ﻿#pragma once
 #include <iostream>
 
-enum class BodyColor {white, yellow, black, milkedcoffee, red, _terminator};
-enum class HairDensity {bold, few, average, high, massive, _terminator};
-enum class BodyPartSize {small, middle, llong, terminator};
+enum class BodyColor {white, yellow, black, milkedcoffee, red, _end_of_list_};
+enum class HairDensity {bold, few, average, high, massive, _end_of_list_};
+enum class BodyPartSize {smalll, middle, llong, _end_of_list_};
 
 class BodyPart
 {
@@ -14,6 +14,8 @@ protected:
 	HairDensity _hair;
 
 public:
+	// Constructors // Initialisation // Destructors // Memory Clean -------
+
 	BodyPart() = delete; // чтобы не было возможности создавать пустые экземпляры
 	BodyPart(float weight,
 	BodyPartSize size,
@@ -26,5 +28,12 @@ public:
 	{	}
 
 	virtual ~BodyPart() = default;
+
+	// Shows ---------------------------------------------------------------
+
+	//virtual float size()		{ return _weight; }
+	float size() { return _weight; }
+	//virtual float size() const	{ return _weight; }
+
 };
 
