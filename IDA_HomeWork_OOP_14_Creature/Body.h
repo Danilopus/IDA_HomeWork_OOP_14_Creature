@@ -9,12 +9,12 @@ protected:
 	
 public:
 	// Constructors // Initialisation // Destructors // Memory Clean -------
-	Body(float weight,
+	Body(float density,
 		BodyPartSize size,
 		BodyColor color,
 		HairDensity hair,
 		float bodysize)
-		: BodyPart(weight, size, color, hair),
+		: BodyPart(density, size, color, hair),
 		_bodysize(bodysize)	
 	{	}		
 	// Shows ---------------------------------------------------------------

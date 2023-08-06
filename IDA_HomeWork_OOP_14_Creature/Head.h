@@ -16,13 +16,13 @@ public:
 	// Constructors // Initialisation // Destructors // Memory Clean -------
 	
 	//Head() = default;
-	Head(float weight,
+	Head(float density,
 		BodyPartSize size,
 		BodyColor color,
 		HairDensity hair,
 		float headsize,
 		size_t eyes_amount) 
-		: BodyPart(weight, size, color,hair),
+		: BodyPart(density, size, color,hair),
 		_headsize(headsize),
 		_eyes_amount(eyes_amount)
 	{	}

@@ -38,7 +38,7 @@ void Task_1(std::string name_of_task)
 	/*
 	Классы не особо богаты на методы, но для целей задания этого хватает одного
 	*/
-	float weight = 75.0;
+	float density = 75.0;
 	BodyPartSize size = BodyPartSize::middle;
 	BodyColor color = BodyColor::milkedcoffee;
 	HairDensity hair = HairDensity::massive;
@@ -56,14 +56,14 @@ void Task_1(std::string name_of_task)
 		system("cls");
 		std::cout << "***\t" << name_of_task << "\n";					
 	
-		Creature creature_1(weight, size, color, hair, armslength, legslength, bodysize, headsize, eyes_amount, name, type, race);
+		Creature creature_1(density, size, color, hair, armslength, legslength, bodysize, headsize, eyes_amount, name, type, race);
 
 		std::cout << "\n\n--- Class pointer";
 		std::cout << "\nCreature*->size() " << (&creature_1)->size();
 		{			
 			BodyPart* creature_1_ptr = &creature_1;
 			BodyPart& creature_1_ref = creature_1;							
-			std::unique_ptr<BodyPart> creature_1_uniqptr(new Creature(weight, size, color, hair, armslength, legslength, bodysize, headsize, eyes_amount, name, type, race));
+			std::unique_ptr<BodyPart> creature_1_uniqptr(new Creature(density, size, color, hair, armslength, legslength, bodysize, headsize, eyes_amount, name, type, race));
 			//std::cout << "\nBodyPart - > " << creature_1_ptr->BodyPart::size();
 			std::cout << "\n\n--- Base class pointer";
 			std::cout << "\nBodyPart*->size() " << creature_1_ptr->size();

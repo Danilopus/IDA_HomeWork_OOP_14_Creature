@@ -16,7 +16,7 @@ protected:
 
 public:
 	// Constructors // Initialisation // Destructors // Memory Clean -------
-	Creature(float weight,
+	Creature(float density,
 		BodyPartSize size,
 		BodyColor color,
 		HairDensity hair,
@@ -30,11 +30,11 @@ public:
 		Character_race race)
 
 		// Как избежать дублирования кода вызова конструкторов и при этом не позволять создавать пустые объекты?
-		: BodyPart(weight, size, color, hair),
-		Head(weight, size, color, hair, headsize, eyes_amount),
-		Body(weight, size, color, hair, bodysize),
-		Arms(weight, size, color, hair, armslength),
-		Legs(weight, size, color, hair, legslength),
+		: BodyPart(density, size, color, hair),
+		Head(density, size, color, hair, headsize, eyes_amount),
+		Body(density, size, color, hair, bodysize),
+		Arms(density, size, color, hair, armslength),
+		Legs(density, size, color, hair, legslength),
 		_name(name),
 		_type(type),
 		_race(race)
