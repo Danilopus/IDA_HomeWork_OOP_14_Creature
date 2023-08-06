@@ -92,12 +92,11 @@ void Task_1(std::string name_of_task)
 		std::cout << "\n\nEsc - exit | any key to continue";
 	} while (_getch() != 27);
 }
-void Tell_me_your_size(BodyPart* inner_ptr)
-{
-	//inner_ptr->size();
-	std::cout << "\tfunc(" << inner_ptr->size();
-}
-
+void Using_BodyPart(BodyPart* creature_ptr) { std::cout << creature_ptr->size(); }
+void Using_Head(Head* creature_ptr)	{ std::cout << creature_ptr->size(); }
+void Using_Body(Body* creature_ptr)	{ std::cout << creature_ptr->size(); }
+void Using_Arms(Arms* creature_ptr)	{ std::cout << creature_ptr->size(); }
+void Using_Legs(Legs* creature_ptr) { std::cout << creature_ptr->size(); }
 
 //Task 2
 void Task_2(std::string name_of_task)
